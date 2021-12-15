@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: customer
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/customer
+    password: 123
+    initialize: 'true'
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        show-sql: 'false'
+        ddl-auto: create-drop
+
+
